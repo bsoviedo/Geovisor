@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+.leaflet-container {
+  display: inline-block;
+  position: absolute;
+  width: 70%;
+  height: 99, 5%;
+  margin-left: 38%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: solid 2px rgb(0, 0, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.leftdiv {
+  display: inline-block;
+  width: 29%;
+  /* height: 97vh; */
+  text-align: justify;
+  border: solid 2px rgb(0, 0, 0);
+  margin: 0.2% 0% 0% 0.1%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.leftdiv h1 {
+  margin: 10% 0% 0% 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.leftdiv p {
+  margin: 10% 5% 5% 5%;
+}
+.capa1 {
+  color: blue;
+  display: inline-block;
+  width: 20px;
+  background-color: #f52e75;
 }
 
-.App-link {
-  color: #61dafb;
+.capa2 {
+  color: blue;
+  display: inline-block;
+  width: 20px;
+  background-color: #c500ff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.capa3 {
+  color: blue;
+  display: inline-block;
+  width: 20px;
+  background-color: #73ffdf;
+}
+
+.popup_transparente .leaflet-popup-content-wrapper,
+.popup_transparente .leaflet-popup-tip {
+  background-color: #ff000000; /* transparente */
+  width: 550px;
+}
+
+.capa4 {
+  color: blue;
+  display: inline-block;
+  width: 20px;
+  background-color: #55ff00;
+}
+
+.circulo {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: green;
+}
+
+.icon-eye-slash:before {
+  content: "\e903";
+}
+
+.icon-eye:before {
+  content: "\e904";
+}
+
+/*Manejo de estilo de la caja*/
+
+.leaflet-html-legend {
+  background-color: rgb(255, 255, 255);
 }
