@@ -155,7 +155,7 @@ export const Map= ()=> {
            
         }).addTo(layer2);
 
-      layer2.addTo(map);
+     
 
        
         let layer3= L.layerGroup()
@@ -182,8 +182,8 @@ export const Map= ()=> {
             },
             style: myStyle
         }).addTo(layer3);
-
-        layer3.addTo(map);
+ 
+        
 
         let layer4= L.layerGroup()
         L.geoJSON(metodologia.features, {
@@ -202,13 +202,15 @@ export const Map= ()=> {
             style: myStyle
         }).addTo(layer4);
 
+        layer2.addTo(map);
+        layer3.addTo(map);
         layer4.addTo(map);
 
 
         let overlaymap={
             '<div class="capa1"> &nbsp</div> Fugas emergentes  <hr>': layer1,
-            '<div class="capa2"> &nbsp</div> Relaciones de poder en el audiovisual  <hr>' : layer2,
-           '<div class="capa3"> &nbsp</div> Lucha por el ser <hr>': layer3,
+            '<div class="capa2"> &nbsp</div>Lucha por el ser  <hr>' : layer2,
+           '<div class="capa3"> &nbsp</div>  Relaciones de poder en el audiovisual <hr>': layer3,
            '<div class="capa4"> &nbsp</div> Haceres transgresores <hr>': layer4,
            /* '<div class="span"> &nbsp</div> Countries4 <hr>': layer1,
             '<div class="span"> &nbsp</div> Countries5 <hr>': layer1,
@@ -232,11 +234,14 @@ export const Map= ()=> {
 <div>
 
 <div className='leftdiv'> 
-    <h1> Hello world</h1>
+    <h2> Contracartografiando el margen: metodologías audiovisuales feministas en Bogotá. </h2>
 
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque at justo sed mollis. Etiam sodales, eros vel ultricies ultrices, purus diam feugiat lorem, id viverra mauris nulla eget sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi vel dignissim est. Etiam pharetra nisi et erat venenatis, vitae maximus lorem placerat. Mauris bibendum finibus urna, et posuere felis eleifend blandit. Mauris faucibus diam sed urna commodo placerat. Mauris rhoncus vestibulum porta. Quisque ex tortor, mollis ac elementum ac, blandit ut justo. Nulla facilisi. Pellentesque sed justo diam. Ut a urna vitae eros congue consequat. Nulla ipsum erat, mollis iaculis auctor ut, malesuada vitae justo. Vivamus et diam vel lectus malesuada semper.
+    <p> En nuestra cartografía queremos conectar desde las luchas su accionar colectivo, de esa forma, en la sistematización y análisis que realizamos, nos quedaron cuatro capas que hablan de luchas y contextos de emergencia, que en su conjunto le dan sentido al mapa que les presentamos. Con esto en mente, les compartimos la información que usamos en cada capa/lucha. 
 
-Sed eu fermentum sem.</p>
+Las capas finales reúnen y tejen la experiencia de cada colectiva poniéndola en diálogo. Es decir, lo desarrollado por cada unx de lxs compañerxs interacciona entre si evidenciando diálogos que transgreden contextos históricos y condiciones de emergencia diferentes. De esta manera, buscamos plantear mediante este ejercicio cartográfico cómo estas luchas han re-aparecido en varios momentos de la historia del audiovisual en Bogotá. 
+
+Partiendo de estas capas buscamos mostrar cómo las diferentes luchas de lxs compañerxs creadorxs  interrumpen las reproducciones hegemónicas de las formas de existir mediante el ver y hacer audiovisual.  Las capas que finalmente definimos y serán explicadas más adelante son: Fugas emergentes en la cual indagamos sobre la violencia como un contexto de emergencia de inquietudes contra el sistema jerárquico del patriarcado y su relación con el audiovisual; relaciones de poder en el audiovisual desde la cual se explora el cómo en los campos de creación se reproducen modelos de violencia patriarcal; lucha por el ser, capa en la que se reúnen diferentes anécdotas en las cuales la lucha por ser re-encausa los modos de concebir a la realización audiovisual y por ùltimo, haceres transgresores, en donde convergen las diferentes Metodologias de las colectivas y realizadorxs como modos transgresores del hacer-ser y resistir en el audiovisual.
+ </p>
 </div>
    
         <MapContainer center={[4.65, -74.15]} zoom={11.5} scrollWheelZoom={false} style={{"display": "inlineBlock"}}>
